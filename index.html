@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background background1"></div>
+    <div class="container">
+        <div class="calculator">
+            <h1 class="title">City Tax Calculator</h1>
+            <label for="adults">Number of Adults (16+):</label>
+            <input type="number" id="adults" min="0" value="">
+            <br>
+            <label for="children10_15">Number of Minors (10-15):</label>
+            <input type="number" id="children10_15" min="0" value="">
+            <br>
+            <label for="children_lt_10">Number of Children (&lt;10):</label>
+            <input type="number" id="children_lt_10" min="0" value="">
+            <br>
+            <label for="nights">Number of Nights:</label>
+            <input type="number" id="nights" min="1" value="">
+            <br>
+            <div class="center-label">To calculate the amount of nights you can also enter your</div>
+            <label for="arrival">Arrival Date:</label>
+            <input type="date" id="arrival">
+            <br>
+            <label for="checkout"> And Check-out Date:</label>
+            <input type="date" id="checkout">
+            <br>
+            <button id="calculateButton">Calculate</button>
+            <br>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
